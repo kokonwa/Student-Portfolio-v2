@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Planner | Favour Ezeonyebuchi</title>
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo">Favour<span>Ezeonyebuchi</span></div>
+<ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="planner.html" class="active">Planner</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+<section class="planner-dashboard">
+<div class="planner-header">
+
+    <span>// ACADEMIC PLANNER</span>
+
+    <h1>Stay Organized & Productive</h1>
+
+    <p>
+        Manage assignments, deadlines, coursework,
+        projects and study goals efficiently.
+    </p>
+
+</div>
+
+<div class="planner-stats">
+
+    <div class="planner-stat">
+        <h2 id="totalTasks">0</h2>
+        <p>Total Tasks</p>
+    </div>
+
+    <div class="planner-stat">
+        <h2 id="completedTasks">0</h2>
+        <p>Completed</p>
+    </div>
+
+    <div class="planner-stat">
+        <h2 id="pendingTasks">0</h2>
+        <p>Pending</p>
+    </div>
+
+</div>
+
+<div class="planner-grid">
+
+    <div class="planner-form">
+
+        <h3>Add New Task</h3>
+
+        <input type="text"
+               id="taskTitle"
+               placeholder="Task Title">
+
+        <input type="text"
+               id="taskCourse"
+               placeholder="Course / Subject">
+
+        <input type="date"
+               id="taskDate">
+
+        <select id="taskPriority">
+            <option value="High">High Priority</option>
+            <option value="Medium">Medium Priority</option>
+            <option value="Low">Low Priority</option>
+        </select>
+
+        <textarea
+            id="taskNote"
+            placeholder="Additional Notes">
+        </textarea>
+
+        <button onclick="addTask()" class="planner-btn">
+            Add Task
+        </button>
+
+    </div>
+
+    <div class="planner-tasks">
+
+        <div class="task-top">
+
+            <h3>My Tasks</h3>
+
+            <div class="task-filters">
+
+                <button onclick="filterTasks('all')">
+                    All
+                </button>
+
+                <button onclick="filterTasks('pending')">
+                    Pending
+                </button>
+
+                <button onclick="filterTasks('completed')">
+                    Completed
+                </button>
+
+            </div>
+
+        </div>
+
+        <div id="taskList"></div>
+
+    </div>
+
+</div>
+</section>
+<script src="script.js"></script>
+  <footer class="footer">
+
+    <div class="footer-line"></div>
+
+    <p>
+    © 2026 Favour Ezeonyebuchi •
+    <a href="mailto:Favourezeonyebuchi4@gmail.com">
+    Favourezeonyebuchi4@gmail.com
+    </a>
+    •
+    <a href="https://github.com/kokonwa" target="_blank">
+    github.com/kokonwa
+    </a>
+    •
+    <a href="https://www.linkedin.com/in/favour-ezeonyebuchi-508a3025a" target="_blank">
+    LinkedIn
+    </a>
+    </p>
+
+</footer>
+</body>
+</html>
