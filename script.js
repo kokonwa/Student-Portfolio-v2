@@ -146,7 +146,7 @@ document.getElementById("pendingTasks").textContent = pending;
 
 renderTasks();
 emailjs.init({
-    publicKey: "AMprSX2soFZIK1Zrd",
+    publicKey: "_-h_QiWGgrxgRijv7",
 });
 
 const contactForm = document.getElementById("contactForm");
@@ -159,8 +159,8 @@ e.preventDefault();
 alert("Button Clicked");
 
 emailjs.sendForm(
-    "service_djde8hg",
-    "template_z1z89qo",
+    "service_ndx7ryb",
+    "template_f883njp",
     this
 )
 .then(function(response){
